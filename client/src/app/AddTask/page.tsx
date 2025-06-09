@@ -41,9 +41,9 @@ const AddTask = () => {
       description,
       priority,
     };
-
-    try {
-      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/task/addTask`, newTask, {
+                      
+    try {               
+      await axios.post("https://checkflow.onrender.com/task/addTask", newTask, {
         headers: {
           "Content-Type": "application/json",
         },
