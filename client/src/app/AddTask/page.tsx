@@ -43,7 +43,7 @@ const AddTask = () => {
     };
                       
     try {               
-      await axios.post("https://checkflow.onrender.com/task/addTask", newTask, {
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/task/addTask`, newTask, {
         headers: {
           "Content-Type": "application/json",
         },
