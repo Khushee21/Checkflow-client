@@ -1,0 +1,105 @@
+/* AllTask.css */
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #2d2d2d;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: linear-gradient(135deg, #f8f8fa, #9899c4);
+  border-left: 5px solid #6366f1;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.2);
+}
+
+li h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #6366f1;
+  margin-bottom: 8px;
+}
+
+li h4 {
+  margin: 4px 0;
+  color: #555;
+  font-weight: 500;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 30px;
+}
+.done-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.pending-btn {
+    margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #6366f1;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.pending-btn:hover {
+  background-color: rgb(190, 38, 38);
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  li {
+    padding: 15px;
+  }
+
+  li h3 {
+    font-size: 1.2rem;
+  }
+
+  li h4 {
+    font-size: 0.95rem;
+  }
+}

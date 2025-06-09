@@ -1,0 +1,119 @@
+.home-main{
+    background-color:whitesmoke;
+}
+/* Home Page Styles */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  flex-wrap: wrap; /* ensure wrap on small containers */
+}
+
+/* Layout switch for tablets and above */
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Content Section */
+.home-content {
+  max-width: 600px;
+  text-align: center;
+  font-family: 'nunito';
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .home-content {
+    text-align: left;
+    margin-left: 10%;
+  }
+}
+
+/* Headings */
+.main-heading {
+  font-size: 3.5rem;
+  font-weight:800;
+  color: #111827;
+  margin-bottom: 1rem;
+  font-family:'nunito' ;
+}
+
+.brand {
+  color: #6366f1; /* Indigo or your brand color */
+}
+
+.sub-heading {
+  font-size: 2rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+/* Description Text */
+.description {
+  font-size: 1.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4f46e5;
+}
+
+/* Responsive Image */
+.home-image img {
+  width: 100%;
+  max-width: 300px;   /* small size */
+  height: auto;
+  border-radius: 22px;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .home-image img {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-right: 5rem;
+    max-width: 500px;  /* slightly larger on bigger screens */
+  }
+}
+
+
+/* Mobile optimization for small screens */
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}

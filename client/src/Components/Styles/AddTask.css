@@ -1,0 +1,125 @@
+/* ========== Calendar Styles ========== */
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Calendar section styling */
+.calendar-section {
+  flex: 1;
+  min-width: 400px;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+/* Form section styling */
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+
+.react-calendar {
+  background-color: #6366f1;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.react-calendar__navigation {
+  background-color: #334155;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.react-calendar__tile {
+  background: #475569;
+  color: white;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+  background: #64748b;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: whitesmoke;
+  color: #6366f1;
+  border-radius: 6px;
+}
+
+.react-calendar__tile--rangeStart,
+.react-calendar__tile--rangeEnd {
+  background: #6366f1;
+  color: white;
+  border-radius: 6px;
+}
+
+.react-calendar__tile:disabled {
+  background: #64748b;
+  color: #94a3b8;
+}
+
+/* ========== Form & Page Styles ========== */
+.Alltask-main {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Alltask-main h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+}
+
+/* Labels */
+.Alltask-main label {
+  display: block;
+  margin-top: 1.2rem;
+  font-weight: 600;
+  color: #2e2f69;
+}
+
+/* Inputs and Selects */
+.Alltask-main input,
+.Alltask-main select {
+  width: 60%;
+  padding: 0.6rem 1rem;
+  margin-top: 0.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #6366f1;
+  transition: border-color 0.3s ease;
+}
+
+.Alltask-main input:focus,
+.Alltask-main select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+/* Paragraph for selected date */
+.Alltask-main p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #475569;
+}
+.Submit-btn{
+  background-color:#6366f1 ;
+  font-family: 'Poppins';
+  padding: 0.4rem;
+  border-radius: 20%;
+}
