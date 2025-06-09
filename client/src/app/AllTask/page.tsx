@@ -20,7 +20,7 @@ const DoneTask = () => {
 
   const handleDelete=async(id: string)=>{
     try{     
-        await axios.delete(`https://checkflow.onrender.com/task/deleteTask/${id}`);
+        await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/task/deleteTask/${id}`);
         setTask((prev)=>prev.filter((t)=>t._id !== id));
     }
     catch(error : any){
@@ -31,7 +31,7 @@ const DoneTask = () => {
   useEffect(() => {
     const fetchTask = async () => {
       try {             
-        const res = await axios.get("https://checkflow.onrender.com/task/allTask", {
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/task/allTask`, {
           headers: {
             "Content-Type": "application/json",
           },
