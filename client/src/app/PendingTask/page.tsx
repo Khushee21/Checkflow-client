@@ -21,7 +21,7 @@ const PendingTask = () => {
   useEffect(() => {
     const fetchTask = async () => {
       try {
-        const res = await axios.get("https://checkflow.onrender.com/task/allTask", {
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/task/allTask`, {
           headers: {
             "Content-Type": "application/json",
           },
